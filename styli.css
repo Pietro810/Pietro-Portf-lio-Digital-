@@ -1,0 +1,157 @@
+/*CSS DAS FOTOS*/
+
+*{
+    margin: 0; /*Remove a margem externa padrão de todos os elementos, evitando espaçamentos indesejados nas bordas.*/
+    padding: 0; /*Remove o preenchimento interno padrão dos elementos, deixando-os "zerados".*/
+    box-sizing: border-box; /*Faz com que o tamanho total dos elementos (width/height) inclua padding e borda, facilitando o controle do layout.*/
+    font-family: "Montserrat", sans-serif; /*Define a fonte principal como "Montserrat" e, caso não esteja disponível, usa uma fonte genérica sem serifa.*/
+    /*overflow-x: hidden;*/
+}
+
+body{
+    width: 100%; /*O corpo da página ocupa 100% da largura da janela.*/
+    height: 100vh; /*A altura do corpo é igual a 100% da altura da viewport (janela do navegador).*/
+    background-color: #1f3755; /*Define o fundo com um tom escuro (cinza quase preto).*/
+    color: aliceblue; /*Define a cor do texto como 'aliceblue' (um tom claro de azul).*/
+    display: flex; /*Ativa o Flexbox no body, tornando-o um container flexível.*/
+    flex-direction: column; /*Os elementos filhos do body são organizados em coluna (de cima para baixo).*/
+    justify-content: space-between; /*Distribui os elementos com o maior espaço possível entre eles verticalmente*/
+}
+
+.box{
+    height: 170px; /*Define a altura da caixa como 170 pixels*/
+    /*border: 3px solid white; Cria uma borda preta, com 3px de largura*/
+    /*border-radius: 20px; Arredonda os cantos da borda em 20 pixels*/
+    margin-bottom: 20px; /*Adiciona um espaço de 20px abaixo da caixa*/
+    padding-top: 50px; /*Adiciona espaço entre o conteúdo do elemento e sua borda superior.*/
+    background-color: #1f3755; /*Define a cor de fundo*/
+}
+
+.titulo{
+    color: white; /*Define a cor do texto para um azul escuro específico*/
+    font-size: 50px; /*Define o tamanho da fonte como 50 pixels*/
+    font-weight: bold; /*Deixa o texto em negrito*/
+    text-align: center; /*Centraliza o texto no meio do elemento*/
+}
+
+.titulo2{
+    color: black; /*Define a cor do texto para preto*/
+    font-size: 50px; /*Define o tamanho da fonte como 50 pixels*/
+    font-weight: bold; /*Deixa o texto em negrito*/
+    text-align:start; /*Centraliza o texto no meio do elemento*/
+}
+
+.titulo1{
+    margin-top: 10px; /*Adiciona um espaço externo de 10px acima do elemento*/
+    font-size: 1rem; /*Define o tamanho da fonte como 1 rem (tamanho relativo à fonte raiz, geralmente 16px)*/
+    text-align: center; /*Centraliza o texto horizontalmente dentro do elemento*/
+    color: white; /*Define a cor como branco.*/
+}
+
+.galeria{
+    display: flex; /*Alinhar itens na horizontal ou vertical. Distribuir espaço entre eles. Reorganizar itens de forma automática dependendo do tamanho da tela.*/
+    flex-wrap: wrap; /*Permite que vai para a linha de baixo*/
+    justify-content: space-between; /*Espaçamento entre os article*/
+}
+
+.boximg{
+    flex: 1 1  23%; /*Define um item flexível que ocupa cerca de 23% do espaço disponível*/
+    min-height: 350px; /*Altura mínima de 350px para o elemento*/
+    margin: 1%; /*Margem externa de 1% ao redor do elemento*/
+    box-sizing: border-box; /*Garante que a borda e o padding sejam incluídos no tamanho total do elemento*/
+    display: flex; /*Ativa o Flexbox no elemento, tornando-o um container flexível*/
+    flex-direction: column; /*Organiza os itens filhos em coluna (de cima para baixo)*/
+    align-items: center;  /*Centraliza os itens filhos horizontalmente no eixo cruzado (nesse caso, horizontalmente)*/
+} 
+
+.ajusteimg{
+    width: 450px;
+    height: 350px; /* Define a altura da imagem */
+    background-size: cover; /*Faz a imagem de fundo cobrir todo o elemento sem distorções*/
+    background-repeat: no-repeat; /*Evita que a imagem de fundo se repita*/
+    background-position: center; /*Centraliza a imagem de fundo dentro do elemento*/
+    border-radius: 20px; /*Arredonda os cantos do elemento com um raio de 20 pixels, criando um visual mais suave e arredondado.*/
+    border: 2px solid #00e0ff; /*Define uma borda sólida de 2px com cor cinza claro*/
+    box-shadow: 0px 0px 15px #00e0ff; /*Aplica uma sombra azul neon ao passar o mouse sobre o cartão.*/
+    cursor: pointer; /*cursor do mouse ao passar por uma imagem*/
+}
+
+.img1{
+    background-image: url(IMG/Kombi.jpg); /*Define uma imagem de fundo para o elemento com a classe img1*/
+}
+
+.img2{
+    background-image: url(IMG/Celularfundo.jpg); /*Define uma imagem de fundo para o elemento com a classe img2*/
+}
+
+.img3{
+    background-image: url(IMG/Capa007.jpg); /*Define uma imagem de fundo para o elemento com a classe img3*/
+}
+
+.img4{
+    background-image: url(IMG/OutdoorHomemAranha.jpg); /*Define uma imagem de fundo para o elemento com a classe img4*/
+}
+
+.img5{
+    background-image: url(IMG/PropagandaLanche.jpg); /*Define uma imagem de fundo para o elemento com a classe img5*/
+}
+
+.img6{
+    background-image: url(IMG/PropagandaPepsi.jpg); /*Define uma imagem de fundo para o elemento com a classe img5*/
+}
+
+.img7{
+    background-image: url(IMG/Capa\ Bluray\ Jurassic\ Park.jpg); /*Define uma imagem de fundo para o elemento com a classe img5*/
+}
+
+.img8{
+    background-image: url(IMG/cartaz\ filme\ jurassic\ park.jpg); /*Define uma imagem de fundo para o elemento com a classe img5*/
+}
+
+.img9{
+    background-image: url(IMG/caneca\ bk.jpg); /*Define uma imagem de fundo para o elemento com a classe img5*/
+}
+
+footer {
+    background-color: #222; /* Cor de fundo clara */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    font-family: Arial, sans-serif; /* Fonte limpa */
+    font-size: 14px; /* Tamanho da letra */
+    color: white; /* Cor do texto */
+    margin: 0px; /*Remove a margem externa padrão de todos os elementos, evitando espaçamentos indesejados nas bordas.*/
+}
+
+a{
+    text-decoration: none; /*Remove o sublinhado dos links.*/
+    color: #fff; /*Define a cor do texto como branco puro.*/
+}
+
+header{
+    background-color: #222; /*Define o fundo do cabeçalho como cinza bem escuro.*/
+    padding: 25px; /*Adiciona 25px de espaço interno em todos os lados.*/
+    display: flex; /*Ativa o Flexbox no header.*/
+    align-items: center; /*Alinha os itens verticalmente no centro.*/
+    justify-content: space-between; /*Espaça os itens horizontalmente com o máximo de espaço entre eles.*/
+}
+
+header h1 {
+    font-size: 1.5em; /*Define o tamanho da fonte do título principal como 2,8 vezes o tamanho padrão.*/
+    font-weight: 200; /*Usa uma fonte mais fina, deixando o título com aparência leve.*/
+    cursor: pointer; /*Altera o cursor para ponteiro ao passar sobre o título, indicando que ele é clicável.*/
+}
+
+header nav {
+    display: flex; /*Ativa o Flexbox para o container de navegação, permitindo melhor controle do layout.*/
+    align-items: center; /*Alinha verticalmente os itens do menu de navegação ao centro.*/
+}
+
+header nav a {
+    margin-right: 1.3em; /* Espaça os links do menu entre si, adicionando margem à direita. */
+    font-size: 1.5em; /* Aumenta o tamanho da fonte dos links para melhor visibilidade. */
+}
+
+header h1, a {
+    color: #00e0ff; /*Define a cor azul para o título do cabeçalho e para todos os links.*/
+    transition: 0.2s ease-in-out; /*Anima transições de estilo nesses elementos em 0.2 segundos.*/
+}

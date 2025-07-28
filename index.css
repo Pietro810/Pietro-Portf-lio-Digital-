@@ -1,0 +1,147 @@
+/*CSS DO INDEX*/
+
+*{
+    margin: 0; /*Remove a margem externa padrão de todos os elementos, evitando espaçamentos indesejados nas bordas.*/
+    padding: 0; /*Remove o preenchimento interno padrão dos elementos, deixando-os "zerados".*/
+    box-sizing: border-box; /*Faz com que o tamanho total dos elementos (width/height) inclua padding e borda, facilitando o controle do layout.*/
+    font-family: "Montserrat", sans-serif; /*Define a fonte principal como "Montserrat" e, caso não esteja disponível, usa uma fonte genérica sem serifa.*/
+    /*overflow-x: hidden;*/
+}
+
+body{
+    width: 100%; /*O corpo da página ocupa 100% da largura da janela.*/
+    height: 100vh; /*A altura do corpo é igual a 100% da altura da viewport (janela do navegador).*/
+    background-color: #1f3755; /*Define o fundo com um tom escuro (cinza quase preto).*/
+    color: aliceblue; /*Define a cor do texto como 'aliceblue' (um tom claro de azul).*/
+    display: flex; /*Ativa o Flexbox no body, tornando-o um container flexível.*/
+    flex-direction: column; /*Os elementos filhos do body são organizados em coluna (de cima para baixo).*/
+    justify-content: space-between; /*Distribui os elementos com o maior espaço possível entre eles verticalmente*/
+}
+
+a{
+    text-decoration: none; /*Remove o sublinhado dos links.*/
+    color: #fff; /*Define a cor do texto como branco puro.*/
+}
+
+header{
+    background-color: #222; /*Define o fundo do cabeçalho como cinza bem escuro.*/
+    padding: 25px; /*Adiciona 25px de espaço interno em todos os lados.*/
+    display: flex; /*Ativa o Flexbox no header.*/
+    align-items: center; /*Alinha os itens verticalmente no centro.*/
+    justify-content: space-between; /*Espaça os itens horizontalmente com o máximo de espaço entre eles.*/
+}
+
+header h1 {
+    font-size: 2.8em; /*Define o tamanho da fonte do título principal como 2,8 vezes o tamanho padrão.*/
+    font-weight: 200; /*Usa uma fonte mais fina, deixando o título com aparência leve.*/
+    cursor: pointer; /*Altera o cursor para ponteiro ao passar sobre o título, indicando que ele é clicável.*/
+}
+
+header nav {
+    display: flex; /*Ativa o Flexbox para o container de navegação, permitindo melhor controle do layout.*/
+    align-items: center; /*Alinha verticalmente os itens do menu de navegação ao centro.*/
+}
+
+header nav a {
+    margin-right: 1.3em; /* Espaça os links do menu entre si, adicionando margem à direita. */
+    font-size: 1.5em; /* Aumenta o tamanho da fonte dos links para melhor visibilidade. */
+}
+
+
+footer{
+    background-color: #222; /*Fundo escuro igual ao do header.*/
+    padding: 16px; /*Espaçamento interno um pouco menor (16px).*/
+    display: flex; /*Ativa o Flexbox no footer.*/
+    align-items: center; /*Alinha os itens verticalmente no centro.*/
+    justify-content: center; /*Centraliza todos os itens no meio do rodapé.*/
+}
+
+footer span {
+    font-size: 0.8em; /*Define o tamanho da fonte dos elementos <span> no rodapé como 80% do tamanho padrão.*/
+    font-weight: 200; /*Aplica uma espessura de fonte leve.*/
+}
+
+main {
+    padding: 5%; /*Adiciona um espaçamento interno de 5% em todos os lados do elemento <main>.*/
+    display: flex; /*Ativa o modelo de layout Flexbox para o container principal.*/
+    align-items: center; /*Alinha os itens verticalmente ao centro.*/
+    justify-content: space-between; /*Distribui os itens com espaço entre eles horizontalmente.*/
+}
+
+.main-content {
+    display: flex; /*Ativa o Flexbox no conteúdo principal.*/
+    flex-direction: column; /*Organiza os filhos do .main-content em coluna.*/
+}
+
+.main-content h2 {
+    margin-bottom: 2%; /*Adiciona margem inferior de 2% ao título para espaçamento.*/
+    font-size: 2.2em; /*Define um tamanho de fonte grande para o título.*/
+}
+
+.text p {
+    width: 75%; /*O parágrafo ocupa toda a largura disponível do container pai.*/
+    font-size: 1.2em; /*Define um tamanho de fonte levemente aumentado.*/
+    font-weight: 300; /*Aplica uma espessura de fonte leve.*/
+    text-align: justify; /*Justifica o texto para melhor apresentação.*/
+    line-height: 1.6; /*Aumenta o espaçamento entre linhas para facilitar a leitura.*/
+}
+
+.text {
+    margin-top: 10%; /*Adiciona uma margem superior de 10% para espaçar a seção de texto do topo da página.*/
+}
+
+.projetos {
+    display: flex; /*Ativa o layout Flexbox para organizar os itens em linha.*/
+    align-items: center; /*Alinha verticalmente os itens ao centro.*/
+    flex-direction: row; /*Organiza os elementos filhos em linha (horizontalmente).*/
+}
+
+.card {
+    width: 120px; /*Define a largura do cartão.*/
+    height: 120px; /*Define a altura do cartão.*/
+    background-color: #222; /*Define uma cor de fundo cinza claro para o cartão.*/
+    border-radius: 8px; /*Arredonda levemente os cantos do cartão.*/
+    margin-right: 1.8em;  /*Adiciona uma margem de 1.8em à direita do elemento, criando um espaço externo entre ele e o que estiver à sua direita.*/
+    margin-left: 1.8em; /*Espaçamento horizontal entre os cartões.*/
+    cursor: pointer; /*Muda o cursor para ponteiro quando o mouse passa por cima (indica que é clicável).*/
+    text-align: center; /*Centraliza o conteúdo horizontalmente.*/
+    line-height: 120px; /*Centraliza o conteúdo verticalmente se for texto puro (não funciona com imagens).*/
+    transition: box-shadow 1.25s ease-in-out; /*Anima suavemente a sombra ao passar o mouse. (obs: faltou 's' em 1.25s.*/
+}
+
+.card img {
+    width: 80%; /*A imagem ocupa 80% da largura do cartão.*/
+    height: 80%; /*A imagem ocupa 80% da altura do cartão.*/
+    border-radius: 30px; /*Arredonda bastante as bordas da imagem.*/
+    vertical-align: middle; /*Alinha verticalmente ao meio (útil se houver texto ao lado).*/
+}
+
+.card:hover {
+    box-shadow: 0px 0px 15px #00e0ff; /*Aplica uma sombra azul neon ao passar o mouse sobre o cartão.*/
+}
+
+header h1, a {
+    color: #00e0ff; /*Define a cor azul para o título do cabeçalho e para todos os links.*/
+    transition: 0.2s ease-in-out; /*Anima transições de estilo nesses elementos em 0.2 segundos.*/
+}
+
+main figure {
+    display: flex; /*Usa Flexbox para o <figure>.*/
+    flex-direction: column; /*Organiza os elementos filhos em coluna.*/
+    align-items: center; /*Centraliza os itens horizontalmente.*/
+    justify-content: center; /*Centraliza os itens verticalmente.*/
+}
+
+main figure img{
+    width: 400px; /*Define a largura da imagem como 400 pixels.*/
+    height: 400px; /*Define a altura da imagem como 400 pixels.*/
+    border-radius: 250px;  /*Arredonda as bordas da imagem, tornando-a circular (mais que a metade da largura/altura).*/
+    margin-bottom: 20px; /*Espaço inferior de 20 pixels abaixo da imagem.*/
+    border: 2px solid #00e0ff; /*Borda sólida de 2px com cor azul-claro.*/
+    transition: 0.2s ease-in-out; /*Transição suave de 0,2 segundos para efeitos visuais (há um erro aqui, veja observação abaixo).*/
+    cursor: pointer; /*Altera o cursor para "mãozinha" ao passar o mouse sobre a imagem.*/
+}
+
+main figure img:hover{
+    box-shadow: 0px 0px 15px #00e0ff; /*.Adiciona uma sombra azul-claro ao redor da imagem ao passar o mouse.*/
+}
